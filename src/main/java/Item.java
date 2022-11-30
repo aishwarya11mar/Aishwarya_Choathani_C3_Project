@@ -13,6 +13,7 @@ public class Item {
 
         return name;
     }
+    //Added getPrice() method
     public int getPrice() {
         return price;
     }

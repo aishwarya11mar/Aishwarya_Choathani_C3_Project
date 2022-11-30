@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RestaurantTest {
     Restaurant restaurant;
-    //REFACTOR ALL THE REPEATED LINES OF CODE
+    //REFACTOR ALL THE REPEATED LINES OF CODE--Added
     @BeforeEach
     public void setUp(){
         LocalTime openingTime = LocalTime.parse("10:30:00");
