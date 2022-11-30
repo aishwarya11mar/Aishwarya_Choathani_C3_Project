@@ -7,15 +7,11 @@ public class RestaurantService {
     //Restaurant res = new Restaurant(name, location, openingTime, closingTime);
 
     public Restaurant findRestaurantByName(String restaurantName) throws restaurantNotFoundException{
-        //Restaurant res = new Restaurant(name, location, openingTime, closingTime);
-        addRestaurant("Amelie's cafe","pune", LocalTime.parse("10:30:00"),LocalTime.parse("13:30:00"));
         for(Restaurant restaurant : restaurants){
             if(restaurant.getName().equals(restaurantName)){
                 return restaurant;
             }
         }
-
-
         throw new restaurantNotFoundException("Not found");
         //DELETE ABOVE STATEMENT AND WRITE CODE HERE
     }
