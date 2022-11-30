@@ -22,7 +22,7 @@ public class Restaurant {
              return true;
         else
             return false;
-        //DELETE ABOVE STATEMENT AND WRITE CODE HERE
+        //DELETE ABOVE STATEMENT AND WRITE CODE HERE--Done
     }
 
     public LocalTime getCurrentTime(){ return  LocalTime.now(); }
@@ -67,11 +67,11 @@ public class Restaurant {
     }
 
     public int calcuateTotalBillAmount(List<String> selectedItems) {
-        int amount = 0;
+        int amount1 = 0;
         for (String selectedItem : selectedItems) {
             Item item = findItemByName(selectedItem);
-            amount += item.getPrice();
+            amount1 += item.getPrice();
         }
-        return amount;
+        return amount1;
     }
 }

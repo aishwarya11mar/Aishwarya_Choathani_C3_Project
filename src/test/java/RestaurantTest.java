@@ -67,7 +67,7 @@ class RestaurantTest {
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     @Test
-    public void calculated_bill_amount_for_selected_items_should_not_be_zero(){
+    public void calculated_total_bill_amount_for_selected_items_should_not_be_zero(){
         List<String> selectedItems = new ArrayList<>();
         selectedItems.add("Vegetable lasagne");
         selectedItems.add("Sweet corn soup");
@@ -76,7 +76,7 @@ class RestaurantTest {
     }
 
     @Test
-    public void calculate_bill_amount_for_no_item_selected_should_be_zero(){
+    public void calculate_total_bill_amount_for_no_item_selected_should_be_zero(){
         List<String> selectedItems = new ArrayList<>();
         int amount = restaurant.calcuateTotalBillAmount(selectedItems);
         assertEquals(0, amount);
